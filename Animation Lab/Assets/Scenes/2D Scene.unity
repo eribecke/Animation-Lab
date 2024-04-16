@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &419808327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8978638162321128894, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
+  m_PrefabInstance: {fileID: 2929896265728818256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &419808333
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419808327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b356a947901f374d83c6464a80de9b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &471599721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180,6 +206,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd3d2ded40a31e4bb29d8c94ffd463c, type: 3}
+--- !u!1 &1060267633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6962398724244479773, guid: 7cd3d2ded40a31e4bb29d8c94ffd463c, type: 3}
+  m_PrefabInstance: {fileID: 348426640945466342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1060267638
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060267633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b50d0a7fc9469e498b778585c0c53bb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1360854661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,7 +3831,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6962398724244479773, guid: 7cd3d2ded40a31e4bb29d8c94ffd463c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1060267638}
   m_SourcePrefab: {fileID: 100100000, guid: 7cd3d2ded40a31e4bb29d8c94ffd463c, type: 3}
 --- !u!1001 &2929896265728818256
 PrefabInstance:
@@ -3789,6 +3844,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5139292040679119451, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 1060267638}
+    - target: {fileID: 6355227800643104274, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1434945478, guid: 3e08b4012cab2c24c9b6c9d8dafe189e, type: 3}
     - target: {fileID: 7804661758625395533, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3840,7 +3903,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8978638162321128894, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 419808333}
   m_SourcePrefab: {fileID: 100100000, guid: 60c69a40c8fdc914ea7b2c65c9333acc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

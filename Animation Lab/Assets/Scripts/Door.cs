@@ -7,11 +7,12 @@ public class Door : MonoBehaviour
     // Fields
 
     // References
+    Animator animator;
 
 
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,6 +23,6 @@ public class Door : MonoBehaviour
     public void ToggleOpenDoor()
     {
         Debug.Log("Toggling door open/closed!");
-        // TODO: This is where the door will play its open and close animation.
+        animator.SetTrigger("Open");
     }
 }

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float playerSpeed;
     [Tooltip("How much force the player jumps with.")]
     [SerializeField] float jumpForce;
+    [SerializeField] Animator doorAnimator;
 
     // Toggles on and off depending on if the player is close enough to a door to interact with it.
     bool isNearDoor = false;
@@ -19,16 +20,34 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     // Reference to the current door the player is standing next to (if any).
     GameObject door;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();    
     }
 
     void Update()
     {
         float movement = Input.GetAxis("Horizontal");
         transform.Translate(new Vector2(movement * Time.deltaTime * playerSpeed, 0));
+        if(movement < 0)
+        {
+            animator.Play("Walking");
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        if(movement > 0)
+        {
+            animator.Play("Walking");
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+
+        if(movement == 0)
+        {
+            animator.Play("Idle");
+
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
